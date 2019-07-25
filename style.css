@@ -1,39 +1,39 @@
-body {
-    font-family: Poiret One!important;
-    padding: 30px;
-}
+    body {
+        font-family: Poiret One!important;
+        padding: 30px;
+    }
 
-::selection {
-    color: dodgerblue;
-}
+    ::selection {
+        color: dodgerblue;
+    }
 
-div.panel {
-    width: 75%;
-    display: inline-block;
-    background-color: lightslategrey;
-    height: 100px!important;
-}
+    div.panel {
+        width: 75%;
+        display: inline-block;
+        background-color: lightslategrey;
+        height: 100px!important;
+    }
 
- /* width */
- ::-webkit-scrollbar {
-    width: 10px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #f1f1f1;
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #888;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555;
-  }
+    /* width */
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+    }
+    
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
 
-  body {
-      overflow: hidden;
-  }
+    body {
+        overflow: hidden;
+    }
