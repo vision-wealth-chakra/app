@@ -2,3 +2,7 @@ body {
     font-family: Poiret One!important;
     padding: 30px;
 }
+
+::selection {
+    color: dodgerblue;
+}
