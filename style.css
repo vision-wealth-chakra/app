@@ -12,6 +12,7 @@
         display: inline-block;
         background-color: lightslategrey;
         height: 100px!important;
+        text-align: center;
     }
 
     div.panel > div.inner {
