@@ -58,3 +58,9 @@
             overflow: scroll;
         }
     }
+
+    @media screen, (min-width: 850px) and (min-height: 450px) {
+        body {
+            overflow: scroll;
+        }
+    }
