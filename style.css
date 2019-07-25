@@ -32,4 +32,8 @@ div.panel {
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     background: #555;
-  } 
+  }
+
+  body {
+      overflow: hidden;
+  }
