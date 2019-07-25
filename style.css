@@ -18,6 +18,7 @@
         width: 25%;
         border: thin solid #555;
         height: 100%;
+        display: inline-block;
     }
 
     /* width */
