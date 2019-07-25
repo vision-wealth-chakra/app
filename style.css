@@ -13,3 +13,11 @@ div.panel {
     background-color: lightslategrey;
     height: 100px!important;
 }
+
+::-webkit-scrollbar-track {
+    width: 5px;
+}
+
+:::-webkit-scrollbar-thumb {
+    color: dodgerblue;
+}
