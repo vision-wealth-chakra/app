@@ -6,3 +6,8 @@ body {
 ::selection {
     color: dodgerblue;
 }
+
+div.panel {
+    width: 70%;
+    display: inline-block;
+}
