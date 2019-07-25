@@ -17,6 +17,7 @@
     div.panel > div.inner {
         width: 25%;
         border: thin solid #555;
+        height: 100%;
     }
 
     /* width */
