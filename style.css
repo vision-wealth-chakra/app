@@ -17,10 +17,11 @@
 
     div.panel > div.inner {
         width: 23%;
-        border: thin solid #555;
+        border: thin solid dodgerblue;
         height: 100%;
         display: inline-block;
         margin: 0px;
+        background-color: #555;
     }
 
     /* width */
