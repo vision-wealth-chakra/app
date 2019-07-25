@@ -10,4 +10,5 @@ body {
 div.panel {
     width: 70%;
     display: inline-block;
+    background-color: lightslategrey;
 }
