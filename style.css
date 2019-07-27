@@ -28,6 +28,7 @@
     .panel > .inner > a {
         height: 100%;
         width: 100%;
+        display: flex;
     }
     /* width */
     ::-webkit-scrollbar {
@@ -40,4 +41,8 @@
 
     body {
         overflow: scroll;
+    }
+
+    .panel > .inner > h2 {
+        line-height: 30px;
     }
