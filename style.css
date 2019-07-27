@@ -52,9 +52,13 @@
     }
 
     form > input {
-        max-width: 150px;
+        width: 55%;
     }
 
     form {
+        text-align: left!important;
+    }
+
+    form > label {
         text-align: left!important;
     }
