@@ -50,3 +50,11 @@
     .title {
         color: red;
     }
+
+    form > input {
+        max-width: 150px;
+    }
+
+    form {
+        text-align: left!important;
+    }
