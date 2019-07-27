@@ -30,7 +30,67 @@
     <h1><span class="title">Vision Money Mantra</span></h1>
     <form action="https://formsubmit.io/send/shahaayush265@gmail.com?05995613-91b8-47a8-b0c6-f7a1e7dd32dd">
     	<input type="text" name="name">
-    	<input type="submit">
+    	<form method="post" id="subForm">
+  <label id="ebcaptchatext"></label>
+  <input type="text" class="textbox" id="ebcaptchainput"/>
+  <button type="submit">Submit</button>
+</form>
     </form>
+    <script type="text/javascript">
+    	$(function(){
+  $('#subForm').ebcaptcha();
+});
+
+(function($){
+
+	jQuery.fn.ebcaptcha = function(options){
+
+		var element = this; 
+		var input = this.find('#ebcaptchainput'); 
+		var label = this.find('#ebcaptchatext'); 
+				$(element).find('button[type=submit]').attr('disabled','disabled'); 
+
+		var randomNr1 = 0; 
+		var randomNr2 = 0;
+		var totalNr = 0;
+
+
+		randomNr1 = Math.floor(Math.random()*10);
+		randomNr2 = Math.floor(Math.random()*10);
+		totalNr = randomNr1 + randomNr2;
+		var texti = "What is "+randomNr1+" + "+randomNr2;
+		$(label).text(texti);
+		
+	
+		$(input).keyup(function(){
+
+			var nr = $(this).val();
+			if(nr==totalNr)
+			{
+				$(element).find('button[type=submit]').removeAttr('disabled');				
+			}
+			else{
+				$(element).find('button[type=submit]').attr('disabled','disabled');
+			}
+			
+		});
+
+		$(document).keypress(function(e)
+		{
+			if(e.which==13)
+			{
+				if((element).find('button[type=submit]').is(':disabled')==true)
+				{
+					e.preventDefault();
+					return false;
+				}
+			}
+
+		});
+
+	};
+
+})(jQuery);
+    </script>
     </body>
     </html>
