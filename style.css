@@ -46,3 +46,7 @@
     .panel > .inner > h2 {
         line-height: 30px;
     }
+
+    .title {
+        color: red;
+    }
