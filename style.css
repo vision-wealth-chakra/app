@@ -62,3 +62,7 @@
     form > label {
         text-align: left!important;
     }
+
+    form > input[type=submit] {
+        width: 25%;
+    }
