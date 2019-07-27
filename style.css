@@ -51,8 +51,8 @@
         color: red;
     }
 
-    form > input {
-        width: 55%;
+    form > input[type=text], input[type=tel], input[type=email] {
+        width: 55%!important;
     }
 
     form {
