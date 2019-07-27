@@ -23,7 +23,7 @@
         margin: 0px;
         background-color: #555;
         cursor: pointer;
-        min-width: 50px;
+        min-width: 150px;
     }
 
     .panel > .inner > a {
