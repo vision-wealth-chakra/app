@@ -30,20 +30,11 @@
     .panel > .inner > a {
         height: 100%;
         width: 100%;
-        display: flex;
+        display: block;
         z-index: -1;
         margin: 0px;
         color: black;
     }
-    /* width */
-    ::-webkit-scrollbar {
-        width: 10px;
-    }
-    
-   ::-webkit-scrollbar {
-       display: none;
-   }
-
     body {
         overflow: scroll;
     }
@@ -58,10 +49,19 @@
 
     form > input[type=text], input[type=tel], input[type=email] {
         width: 55%!important;
+        text-align: center!important;
     }
 
     form {
-        text-align: left!important;
+        text-align: left;
+    }
+
+    .form-control {
+        text-align: center!important;
+    }
+
+    form > input {
+        text-align: center!important;
     }
 
     form > label {
@@ -70,4 +70,5 @@
 
     form > input[type=submit] {
         width: 25%;
+        text-align: center!important;
     }
