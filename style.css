@@ -46,7 +46,7 @@
         overflow: scroll;
     }
 
-    .panel > .inner > h2 {
+    .panel > .inner > a > h2, .panel > .inner > a > i {
         line-height: 30px;
     }
 
