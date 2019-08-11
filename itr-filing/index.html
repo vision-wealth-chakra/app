@@ -47,18 +47,18 @@
         <h2>I.T.R. Filing</h2>
     	    <form method="POST" action="https://formspree.io/visionmoneymantra.web@gmail.com">
   <div class="form-group">
-    <label class="" for="name">Name</label>
+    <label class="" for="name">Name <span class="req">*</span></label>
     <input style="width: 55%; min-width: 250px;" id="name" class="form-control" type="text" name="name" required>
   </div>
   <div class="form-group">
-      <label for="email">E-mail</label>
+      <label for="email">E-mail <span class="req">*</span></label>
     <input class="form-control" type="email" name="email" id="email" required>
   </div>
   <div class="form-group">
-    <label for="tel-ph">Phone No.</label>
+    <label for="tel-ph">Phone No. <span class="req">*</span></label>
     <i style="display: inline-block;" class="material-icons" data-toggle="tooltip" data-placement="top" title="The format is 9422620771 and the Country Code must be specified.">help_outline</i>
       <input style="border: 1px solid #ced4da!important" class="form-control" type="tel" name="tel-ph" id="tel-ph" placeholder="9422620771" pattern="[0-9]{10}" required>
-         <label for="cc">Country Code</label>
+         <label for="cc">Country Code <span class="req">*</span></label>
       <select name="countryCode" style="width: 25%; min-width: 100px!important;" class="form-control" name="countryCode" id="cc" required>
     <option data-countryCode="GB" value="44" Selected>UK (+44)</option>
     <option data-countryCode="US" value="1">USA (+1)</option>
@@ -282,19 +282,25 @@
 
   </div>
 <div class="form-group">
-    <label for="pan">PAN Card</label>
-    <input name="pan" id="pan" type="hidden" role="uploadcare-uploader" />
+    <label for="pan">PAN Card <span class="req">*</span></label>
+    <input name="pan" id="pan" type="hidden" role="uploadcare-uploader" required/>
 </div>
 <div class="form-group">
-    <label for="adhr">Aadhar Card</label>
-    <input name="adhr" id="adhr" type="hidden" role="uploadcare-uploader" />
+    <label for="adhr">Aadhar Card <span class="req">*</span></label>
+    <input name="adhr" id="adhr" type="hidden" role="uploadcare-uploader" required/>
 </div>
 <div class="form-group">
     <label for="form16">Form16</label>
-    <input name="form16" id="pan" type="hidden" role="uploadcare-uploader" />
+    <input name="form16" id="pan" type="hidden" role="uploadcare-uploader"/>
 </div>
       <input class="btn btn-primary grow" type="submit">
+      <p><span class="req">*</span> marks required</p>
 </form>
+<style>
+    .req {
+        color: red;
+    }
+</style>
     </div>
     </body>
     </html>
