@@ -13,6 +13,20 @@
   $('[data-toggle="tooltip"]').tooltip()
 })
     </script>
+    <script>
+  UPLOADCARE_PUBLIC_KEY = 'b72ebcf91102cef62f25';
+  UPLOADCARE_TABS = 'file camera url facebook gdrive gphotos instagram';
+  UPLOADCARE_EFFECTS = 'crop';
+  UPLOADCARE_IMAGES_ONLY = true;
+  UPLOADCARE_PREVIEW_STEP = true;
+</script>
+
+<script src="https://ucarecdn.com/libs/widget/3.x/uploadcare.full.min.js"></script>
+<script src="https://ucarecdn.com/libs/widget-tab-effects/1.x/uploadcare.tab-effects.js"></script>
+
+<script>
+  uploadcare.registerTab('preview', uploadcareTabEffects)
+</script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> 
     <link rel="stylesheet" href="../style.css">
     <meta charset="UTF-8">
@@ -267,23 +281,18 @@
 </select>
 
   </div>
-  <div class="form-group">
-    <label class="fileContainer" style="padding: 30px; text-align: center!important; border: thick dashed deepskyblue;">
-        <i style="display: inline-block;" class="material-icons">cloud_upload</i><br>
-    Upload PAN Card
-    <input style="display: none;" type="file" name="pan" accept=".jpeg, jpg, .jif, .jfif, .png, .pdf, .gif" required/>
-</label>
-    <label class="fileContainer" style="padding: 30px; text-align: center!important; border: thick dashed deepskyblue;">
-        <i style="display: inline-block;" class="material-icons">cloud_upload</i><br>
-    Upload Aadhar
-    <input style="display: none;" type="file" name="aadhar" accept=".jpeg, jpg, .jif, .jfif, .png, .pdf, .gif" required/>
-</label>
-    <label class="fileContainer" style="padding: 30px; text-align: center!important; border: thick dashed deepskyblue;">
-        <i style="display: inline-block;" class="material-icons">cloud_upload</i><br>
-    Upload Form16
-    <input style="display: none;" type="file" name="form16" accept=".jpeg, jpg, .jif, .jfif, .png, .pdf, .gif" required/>
-</label>
-  </div>
+<div class="form-group">
+    <label for="pan">PAN Card</label>
+    <input name="pan" id="pan" type="hidden" role="uploadcare-uploader" />
+</div>
+<div class="form-group">
+    <label for="adhr">Aadhar Card</label>
+    <input name="adhr" id="adhr" type="hidden" role="uploadcare-uploader" />
+</div>
+<div class="form-group">
+    <label for="form16">Form16</label>
+    <input name="form16" id="pan" type="hidden" role="uploadcare-uploader" />
+</div>
       <input class="btn btn-primary grow" type="submit">
 </form>
     </div>
