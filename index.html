@@ -116,7 +116,7 @@ const logout = () => {
     text-align: center;
     }    
     </style>
-<div style="display: inline-block; text-align: left" class="left">
+<div  id="sul" style="display: inline-block; text-align: left" class="left">
     <a style="text-align: center; display: inline-block;" href="https://vision-wealth-chakra.auth0.com/login?state=g6Fo2SByeXFVYkEzdUVQSkdVWU1xcDlTaXJvaUF1bENqLTdoMaN0aWTZIGRFXzNuTGJWVm9CcGU5eG1EcEhKTXJCdVB5QmZObWRjo2NpZNkgdlIweFhNcWRBU1lQa2ZCeW8zOVNEUDZoZzdXV2hWTzk&client=vR0xXMqdASYPkfByo39SDP6hg7WWhVO9&protocol=oauth2&scope=openid%20profile%20email&response_type=code&response_mode=query&nonce=NynMZuGSIwV5.SeYpU50SN~dfE6CNdPVm34gd16C.S5&redirect_uri=https%3A%2F%2Fvision-wealth-chakra.github.io%2Fapp&code_challenge=ytaaOt1YmSytvVHIEMDN0jSJrE4ZINQdtQmsuLKWwqQ&code_challenge_method=S256&auth0Client=eyJuYW1lIjoiYXV0aDAtc3BhLWpzIiwidmVyc2lvbiI6IjEuMC4yIn0%3D"><button class="btn-sm btn btn-primary">Login / Signup</button></a>
 </div> 
     <h1><span class="title grow">Vision Wealth Chakra</span></h1>
@@ -128,6 +128,12 @@ const logout = () => {
                 <p>Welcome to <span class="title grow">Vision Wealth Chakra</span></p>
             </div>
     </div>
+    <script type="text/javascript">
+        string a = window.location.search.substr(1);
+        if(a === "iss=https%3A%2F%2Fvision-wealth-chakra.auth0.com%2F") {
+            document.getElementById("sul").innerHTML = "";
+        }
+    </script>
     <div class="panel">
         <div class="inner grow">
             <a href="itr-filing">
