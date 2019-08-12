@@ -1,0 +1,31 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bootbox.all.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vision-wealth-chakra/app.git"
+  },
+  "keywords": [],
+  "author": "Aayush Shah <shahaayush265@gmail.com> (https://visionmoneymantra.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vision-wealth-chakra/app/issues"
+  },
+  "homepage": "https://github.com/vision-wealth-chakra/app#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  }
+}
