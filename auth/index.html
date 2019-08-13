@@ -24,7 +24,9 @@
     var authParams = JSON.parse(decodeURIComponent(escape(window.atob('eyJwcm90b2NvbCI6Im9hdXRoMiIsInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwiLCJyZXNwb25zZV90eXBlIjoiY29kZSIsInJlc3BvbnNlX21vZGUiOiJxdWVyeSIsIm5vbmNlIjoiRHR2VTVlWFRUQzVVUmJweUN3SjhFbHhmbFhIY2VYb0pwZHoxNWVjTnFkOSIsImNvZGVfY2hhbGxlbmdlIjoiRjF1TEN5U09EVTJaOGctbnFTMDBWQWNiRjJVejRoM0RUeURRc3B0V005VSIsImNvZGVfY2hhbGxlbmdlX21ldGhvZCI6IlMyNTYiLCJhdXRoMENsaWVudCI6ImV5SnVZVzFsSWpvaVlYVjBhREF0YzNCaExXcHpJaXdpZG1WeWMybHZiaUk2SWpFdU1DNHlJbjA9IiwiX2NzcmYiOiJtbVNwWDVtdS1ONlhYMF8xNEhjeko5WFBKYUphY3VXNngwc00iLCJfaW50c3RhdGUiOiJkZXByZWNhdGVkIiwic3RhdGUiOiJnNkZvMlNCSFJtd3RRa2wyZHkwMGJHTnVXbUZmU1Y5RFMyWldPRVJ2UldwVU4wdDJPYU4wYVdUWklFaEtPREZZTWtsV2RHRnFkbVYwUjBoTldGYzNibFJSTlhGcVFYcEliM2hubzJOcFpOa2dkbEl3ZUZoTmNXUkJVMWxRYTJaQ2VXOHpPVk5FVURab1p6ZFhWMmhXVHprIn0='))));
     var lock = new Auth0Lock(
       'vR0xXMqdASYPkfByo39SDP6hg7WWhVO9',
-      'vision-wealth-chakra.auth0.com', {
+      'vision-wealth-chakra.auth0.com',
+      'vision-wealth-chakra.github.io/app/auth/',
+      'vision-wealth-chakra.github.io/app/auth', {
         
         configurationBaseUrl: 'https://cdn.auth0.com/',
         
